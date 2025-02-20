@@ -6,7 +6,7 @@ The challenge is to build out this 3-column preview card component and get it lo
 
 ### Screenshot
 
-![](./screenshot.png)
+![](screenshot.png)
 
 ### Links
 
