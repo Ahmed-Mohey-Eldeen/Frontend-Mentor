@@ -18,10 +18,6 @@ The challenge is to build out this 3-column preview card component and get it lo
 - CSS
 - HTML
 
-### Continued development
-
-I will continue focusing on the display flex function amd it's charcterestic.
-
 ### Useful resources
 
 - [Elzero](https://elzero.org/) - This helped me for learning HTML and CSS. I really liked this pattern and will use it going forward.
@@ -29,7 +25,6 @@ I will continue focusing on the display flex function amd it's charcterestic.
 ## Author
 
 - Github Website - [Ahmed Mohey Eldeen](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor)
-- Frontend Mentor - [@Ahmed Mohey Eldeen](https://www.frontendmentor.io/profile/Ahmed-Mohey-Eldeen)
 
 ## Acknowledgments
 
