@@ -6,7 +6,7 @@ The challenge is to build out this 3-column preview card component and get it lo
 
 ### Screenshot
 
--[The Photo](Screenshot.png)
+-[The Project](Screenshot.png)
 
 ### Links
 
