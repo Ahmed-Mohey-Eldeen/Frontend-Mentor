@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+}
+
+.page {
+    background-color: white;
+    width: 600px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "discr discr" "subs why";
+}
+
+.discr {
+    grid-area: discr;
+    width: 540px;
+    padding: 30px;
+}
+
+h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+h4 {
+    color: hsl(71, 73%, 54%);
+    margin-top: 30px;
+}
+
+p {
+    font-size: 17px;
+    color: hsl(218, 22%, 67%);
+}
+
+.discr p {
+    margin-top: 30px;
+}
+
+.subs {
+    grid-area: subs;
+    width: 240px;
+    padding: 30px;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    border-bottom-left-radius: 7px;
+}
+
+.dollar {
+    margin-top: 20px;
+    display: flex;
+}
+
+span {
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.month {
+    opacity: 0.5;
+    margin-top: 7px
+}
+
+.subs p {
+    color: white;
+    margin-top: 20px;
+}
+
+button {
+    width: 235px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border-style: none;
+    border-radius: 7px;
+}
+
+.why {
+    grid-area: why;
+    width: 240px;
+    padding: 30px;
+    background-color: hsl(179deg 44.67% 56.15%);
+    color: white;
+    border-bottom-right-radius: 7px;
+}
+
+ul {
+    color: white;
+    margin-top: 20px;
+    opacity: 0.6;
+    list-style: none;
+    line-height: 20px;
+ }
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 375px) {
+    .page {
+        width: 300px;
+        height: 770px;
+        display: block;
+    }
+    .discr {
+        width: 240px;
+    }
+    .why {
+        border-bottom-left-radius: 7px;
+    }
+    .subs {
+        border-bottom-left-radius: 0px;
+    }
+}
