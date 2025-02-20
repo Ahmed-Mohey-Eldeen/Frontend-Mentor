@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('images/pattern-background-desktop.svg');
+    background-size: 100%;
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+}
+
+.page {
+    width: 300px;
+    height: 560px;
+    background-color: white;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.hero {
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.choose {
+    width: 270px;
+    height: 80px;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: hsl(225, 100%, 98%);
+    display: grid;
+    grid-template-columns: 50px 140px 70px;
+    grid-template-areas: "music plan change";
+}
+
+.music {
+    grid-area: music;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.plan {
+    grid-area: plan;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.name {
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.number {
+    color: hsl(224, 23%, 55%);
+    margin-top: -8px;
+}
+
+.change {
+    grid-area: change;
+    margin-top: 35px;
+    margin-left: 10px;
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+.change:hover {
+    text-decoration: none;
+    color: hsl(271, 75%, 52%);
+}
+
+.submet {
+    width: 270px;
+    height: 50px;
+    background-color: hsl(245, 75%, 52%);
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    border-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 15px 9px 2px #dddd;
+}
+
+.submet:hover {
+    background-color: hsl(245, 76%, 64%);
+}
+
+.cancel {
+    width: 270px;
+    height: 50px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    border-color: transparent;
+    font-weight: 900;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url('images/pattern-background-mobile.svg');
+    }
+}
