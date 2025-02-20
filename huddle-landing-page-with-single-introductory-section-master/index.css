@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 1220px 605px;
+}
+
+.page {
+    padding: 30px;
+}
+
+.logo {
+    height: 120px;
+}
+
+.logo img {
+    margin-top: 20px;
+}
+
+.mockups {
+    display: flex;
+}
+
+.illustration img {
+    height: 410px;
+    width: 660px;
+}
+
+.intro {
+    padding: 30px;
+    color: white;
+    margin-left: 55px;
+}
+
+h1 {
+    width: 370px;
+    line-height: 40px;
+}
+
+.intro p {
+    margin-top: 20px;
+    line-height: 24px;
+    width: 415px;
+    word-spacing: 2px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    margin-top: 20px;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 0 0 5px 0px #272525;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+}
+
+.icons {
+    position: relative;
+    display: flex;
+}
+
+.icons a {
+    width: 35px;
+    height: 35px;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -20px;
+    cursor: pointer;
+}
+
+.facebook {
+    position: absolute;
+    right: 170px;
+}
+
+.twitter {
+    position: absolute;
+    right: 115px;
+}
+
+.instagram {
+    position: absolute;
+    right: 60px;
+}
+
+.icons a:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url('images/bg-mobile.svg');
+        background-repeat: no-repeat;
+    }
+    .page {
+        padding: 20px;
+        height: 860px;
+    }
+    .mockups {
+        display: block;
+    }
+    .illustration img {
+        height: 330px;
+        width: 370px;
+    }
+    .intro {
+        padding: 30px;
+        color: white;
+        margin-left: -35px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .intro p {
+        text-align: center;
+        width: 330px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    button {
+        width: 195px;
+        margin-top: 30px;
+        margin-left: 85px;
+    }
+    .icons h1 {
+        right: 190px;
+        margin-top: 30px;
+    }
+    footer {
+        margin-left: 40px;
+    }
+}
