@@ -1,1 +1,1 @@
-Every project is in a separate branch
+This is My solutions to the Frontend Mentor Challenges
