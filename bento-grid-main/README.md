@@ -10,7 +10,7 @@ The challenge is to build out a Bento grid and get it looking as close to the de
 
 ### Links
 
-- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/four-card-feature-section-master)
+- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/bento-grid-main)
 
 ### Built with
 
