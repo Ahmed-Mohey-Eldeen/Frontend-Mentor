@@ -10,7 +10,7 @@ The challenge is to build out a huddle landing page with single introductory sec
 
 ### Links
 
-- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/four-card-feature-section-master)
+- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/huddle-landing-page-with-single-introductory-section-master)
 
 ### Built with
 
