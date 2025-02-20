@@ -10,7 +10,7 @@ The challenge is to build out a Recipe page and get it looking as close to the d
 
 ### Links
 
-- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/four-card-feature-section-master)
+- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/recipe-page-main)
 
 ### Built with
 
