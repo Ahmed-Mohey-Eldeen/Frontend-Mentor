@@ -10,7 +10,7 @@ The challenge is to build out a Product preview card component and get it lookin
 
 ### Links
 
-- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/four-card-feature-section-master)
+- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/product-preview-card-component-main)
 
 ### Built with
 
