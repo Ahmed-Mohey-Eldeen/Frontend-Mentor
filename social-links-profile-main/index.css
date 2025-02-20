@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(0, 0%, 8%);
+}
+
+:root {
+    --mainwidth: 300px;
+    --mainbackgroundcolor: hsl(0, 0%, 12%);
+    --linkbackgroundcolor: hsl(0, 0%, 20%);
+}
+
+.page {
+    background-color: var(--mainbackgroundcolor);
+    width: var(--mainwidth);
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+figure {
+    background-color: var(--mainbackgroundcolor);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+img {
+    border-radius: 50%;
+    width: calc(var(--mainwidth) / 3);
+    height: calc(var(--mainwidth) / 3);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    background-color: var(--mainbackgroundcolor);
+    color: hsl(0, 0%, 100%);
+    font-family: inter;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.addr {
+    background-color: var(--mainbackgroundcolor);
+    color: hsl(75, 94%, 57%);
+    font-family: inter;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+p {
+    background-color: var(--mainbackgroundcolor);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.link {
+    width: calc( var(--mainwidth) - 40px );
+    height: 30px;
+    background-color: var(--linkbackgroundcolor);
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: inter;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: url('assets/images/black-cursor.png'), pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: hsl(75, 94%, 57%);
+    color:hsl(0, 0%, 8%);
+}
+
+.attribution {
+    margin-top: 5px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 375px) {
+    :root {
+        --mainwidth: calc( 100% - 30px);
+    }
+    .page {
+        padding: 10px;
+    }
+    img {
+        width: calc(var(--mainwidth) * 0.9);
+        height: calc(var(--mainwidth) * 0.9);
+    }
+    img, .name {
+        margin-top: -10px;
+    }
+    .link {
+        width: calc( var(--mainwidth) - -27px );
+    }
+}
