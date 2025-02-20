@@ -10,7 +10,7 @@ The challenge is to build out a Social links profile and get it looking as close
 
 ### Links
 
-- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/four-card-feature-section-master)
+- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/social-links-profile-main)
 
 ### Built with
 
