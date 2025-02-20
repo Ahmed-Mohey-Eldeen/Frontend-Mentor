@@ -10,7 +10,7 @@ The challenge is to build out a Single price grid component and get it looking a
 
 ### Links
 
-- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/four-card-feature-section-master)
+- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/single-price-grid-component-master)
 
 ### Built with
 
