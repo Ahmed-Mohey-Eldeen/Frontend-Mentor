@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --margintop: 20px;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.page {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    height: 530px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+figure {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    
+}
+
+.bhover {
+    background-color: hsl(178, 100%, 50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.mainpic {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.notseen {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 125px;
+    top: 125px;
+    opacity: 0;
+}
+
+.mainpic:hover {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.bhover:hover .notseen {
+    opacity: 1;
+}
+
+figcaption {
+    color: hsl(0, 0%, 100%);
+    margin-top: var(--margintop);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    margin-top: var(--margintop);
+    font-size: 18px;
+}
+
+.num {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--margintop);
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+    display: flex;
+}
+
+.eth div {
+    margin-left: 5px;
+}
+
+.clock {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+}
+
+.clock div {
+    margin-left: 2px;
+}
+
+hr {
+    margin-top: var(--margintop);
+    opacity: 0.2;
+}
+
+footer {
+    margin-top: var(--margintop);
+    display: flex;
+}
+
+.picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0.5px solid hsl(0, 0%, 100%);
+}
+
+.job {
+    color: hsl(215, 51%, 70%);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    color: hsl(0, 0%, 100%);
+    margin-left: 7px;
+    display: flex;
+    align-items: center;
+}
+
+figcaption:hover,
+.name:hover,
+.attribution a:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: hsl(215, 51%, 70%);
+}
+
+.attribution a {
+    color: hsl(0, 0%, 100%);
+}
