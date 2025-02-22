@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0px 300px;
+    background-size: 100% 310px;
+}
+
+.page {
+    width: 880px;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 205px;
+}
+
+.pic {
+    background-color: hsl(228, 56%, 26%);
+    width: 350px;
+    height: 180px;
+    border-radius: 10px 100px 10px 10px;
+}
+
+.pic img {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.icons {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.icons div {
+    background-color: hsl(229, 57%, 11%);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.document {
+    position: absolute;
+    left: -20px;
+    top: -22px;
+}
+
+.folder {
+    position: absolute;
+    left: -22px;
+    top: -20px;
+}
+
+.upload {
+    position: absolute;
+    left: -22px;
+    top: -18px;
+}
+
+.storage {
+    width: 500px;
+    height: 130px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.message {
+    margin-left: 30px;
+    margin-top: 35px;
+    color: hsl(229, 7%, 55%);
+    display: flex;
+}
+
+.cap {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+h5 {
+    color: white;
+}
+
+.left {
+    width: 150px;
+    height: 50px;
+    background-color: hsl(243, 100%, 93%);
+    color: hsl(229, 7%, 55%);
+    position: absolute;
+    top: -25px;
+    right: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-right: 10px;
+    color: black;
+}
+
+.left::after {
+    content: "";
+    border-color: hsl(243, 100%, 93%) hsl(243, 100%, 93%) transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    position: absolute;
+    right: 0px;
+    bottom: -15px;
+}
+
+.range {
+    width: 440px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: hsl(229, 57%, 11%);
+    margin-left: 30px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.inside {
+    width: 350px;
+    height: 11px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%) 50%, hsl(335, 100%, 65%) 100%);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.inside::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    top: 1px;
+}
+
+.GB {
+    width: 450px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+a {
+    color: hsl(229, 7%, 55%);
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url("images/bg-mobile.png");
+        background-position: 0px 0px;
+        background-size: 100% 525px;
+    }
+    .page {
+        width: 310px;
+        height: 400px;
+        display: block;
+        margin-top: 50px;
+    }
+    .pic {
+        width: 310px;
+    }
+    .storage {
+        width: 310px;
+        height: 140px;
+        margin-top: 20px;
+        position: absolute;
+    }
+    .message {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    .left {
+        width: 180px;
+        height: 70px;
+        top: 100px;
+        right: 80px;
+    }
+    .left::after {
+        border-width: 0px;
+    }
+    .range {
+        width: 240px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .inside {
+        width: 170px;
+    }
+    .GB {
+        width: 240px;
+        margin-left: 30px;
+    }
+}
