@@ -1,0 +1,503 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav nav nav nav" "sec sec sec sec" "footer footer footer footer" "sign sign sign sign";
+}
+
+.background {
+    background-image: url("images/bg-hero-desktop.svg");
+    background-size: 100% 680px;
+    background-repeat: no-repeat;
+    background-color: #eff7fb;
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 0;
+    z-index: -3;
+}
+
+.nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "logo logo logo try";
+}
+
+.logo {
+    grid-area: logo;
+    margin: 40px;
+}
+
+.try {
+    grid-area: try;
+    margin: 40px;
+    cursor: pointer;
+}
+
+.try button {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border-color: transparent;
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.try button:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+.section {
+    grid-area: sec;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "build mockups" "grow-together grow-together" "flowing-conv flowing-conv" "your-users your-users" "ready ready";
+    padding: 40px;
+}
+
+.build {
+    grid-area: build;
+}
+
+.build h1 {
+    font-size: 40px;
+    width: 400px;
+    margin-top: 100px;
+}
+
+.build p {
+    margin-top: 30px;
+    font-size: 18px;
+    width: 450px;
+    color: hsl(192, 100%, 9%)s;
+}
+
+.build button {
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border-radius: 25px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.build button:hover {
+    background-color: hsl(322, 83%, 77%);
+}
+
+.mockups {
+    grid-area: mockups;
+    width: 600px;
+    height: 450px;
+}
+
+.card {
+    margin-top: 50px;
+    box-shadow: 0 0 10px 3px whitesmoke;
+    height: 500px;
+    border-radius: 15px;
+    width: 1040px;
+    margin-left: 70px;
+}
+
+.grow-together {
+    margin-top: 200px;
+    grid-area: grow-together;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "together grow";
+}
+
+.together {
+    grid-area: together;
+    margin-top: 170px;
+    margin-left: 90px;
+    width: 370px;
+}
+
+.grow {
+    grid-area: grow;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 450px;
+    height: 400px;
+}
+
+.together h3 {
+    font-size: 30px;
+}
+
+.together p {
+    color: hsl(208, 11%, 55%);
+    margin-top: 10px;
+}
+
+.flowing-conv {
+    grid-area: flowing-conv;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:  "flowing conv";
+}
+
+.flowing {
+    grid-area: flowing;
+    margin-top: 100px;
+    margin-left: 130px;
+    width: 350px;
+    height: 300px;
+}
+
+.conv {
+    grid-area: conv;
+    width: 395px;
+    margin-top: 180px;
+    margin-left: 25px;
+}
+
+.conv h3 {
+    font-size: 25px;
+}
+
+.conv p {
+    color: hsl(208, 11%, 55%);
+    margin-top: 10px;
+}
+
+.your-users {
+    grid-area: your-users;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "users your";
+}
+
+.users {
+    grid-area: users;
+    margin-top: 170px;
+    margin-left: 90px;
+    width: 370px;
+}
+
+.users h3 {
+    font-size: 25px;
+}
+
+.users p {
+    color: hsl(208, 11%, 55%);
+    margin-top: 10px;
+}
+
+.your {
+    grid-area: your;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 450px;
+    height: 400px;
+}
+
+.ready {
+    grid-area: ready;
+    width: 500px;
+    height: 210px;
+    margin-left: 400px;
+    margin-top: 110px;
+    background-color: white;
+    z-index: 1;
+}
+
+.ready h2 {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ready button {
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border-radius: 25px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.ready button:hover {
+    background-color: hsl(322, 83%, 77%);
+}
+
+.footer {
+    grid-area: footer;
+    height: 430px;
+    width: 100%;
+    background-color: hsl(192, 100%, 9%);
+    margin-top: -130px;
+    display: flex;
+    color: hsl(193, 100%, 96%);
+}
+
+.flogo {
+    filter: brightness(10);
+}
+
+.footer a {
+    color: hsl(193, 100%, 96%);
+    text-decoration: none;
+}
+
+.data {
+    margin-top: 140px;
+    margin-left: 100px;
+    width: 290px;
+}
+
+.footer-data {
+    display: flex;
+    margin-top: 20px;
+}
+
+.fdata {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.location {
+    height: 15px;
+    margin-left: 7px;
+}
+
+.links {
+    margin-top: 170px;
+    margin-left: 100px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links div {
+    margin-top: 20px;
+}
+
+.icons {
+    margin-top: 190px;
+    margin-left: 140px;
+    display: flex;
+}
+
+.icon {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon:hover {
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+}
+
+.copyright {
+    margin-top: 120px;
+    margin-left: 160px;
+}
+
+footer {
+    grid-area: sign;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 375px) {
+body {
+    display: block;
+}
+.background {
+    background-image: url("images/bg-hero-mobile.svg");
+    background-size: 100% 650px;
+    width: 100%;
+    height: 720px;
+}
+.logo {
+    margin: 20px;
+}
+.logo img {
+    width: 140px;
+    height: 35px;
+}
+.try {
+    margin: 20px;
+}
+.try button {
+    width: 120px;
+    height: 35px;
+}
+.section {
+    display: block;
+    padding: 30px;
+}
+.build h1 {
+    text-align: center;
+    font-size: 30px;
+    width: 300px;
+    margin-top: 20px;
+}
+.build p {
+    text-align: center;
+    font-size: 19px;
+    width: 310px;
+}
+.build button {
+    width: 265px;
+    margin-top: 30px;
+    margin-left: 22px;
+}
+.mockups {
+    width: 330px;
+    height: 220px;
+    margin-top: 40px;
+}
+.card {
+    margin-top: 30px;
+    height: 570px;
+    width: 320px;
+    margin-left: 0px;
+}
+.grow-together {
+    margin-top: 100px;
+    display: block;
+}
+.together {
+    margin-top: 60px;
+    margin-left: 15px;
+    width: 275px;
+}
+.grow {
+    margin-left: 20px;
+    width: 265px;
+    height: 275px;
+}
+.together h3 {
+    text-align: center;
+}
+.together p {
+    text-align: center;
+}
+.flowing-conv {
+    display: block;
+}
+.flowing {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 265px;
+    height: 275px;
+}
+.conv {
+    margin-top: 60px;
+    margin-left: 15px;
+    width: 280px;
+}
+.conv h3 {
+    text-align: center;
+}
+.conv p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.your-users {
+    display: block;
+}
+.users {
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 270px;
+}
+.users h3 {
+    text-align: center;
+    font-size: 25px;
+}
+.users p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.your {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 265px;
+    height: 275px;
+}
+.ready {
+    width: 320px;
+    height: 200px;
+    margin-left: 0px;
+    margin-top: 50px;
+    padding: 1px;
+    position: relative;
+    z-index: 1;
+}
+.ready h2 {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.ready button {
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.footer {
+    height: 770px;
+    margin-top: -250px;
+    display: block;
+}
+.flogo {
+    margin-top: 130px;
+}
+.data {
+    margin-left: 20px;
+}
+.fdata {
+    font-size: 16px;
+}
+.links {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.icons {
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.copyright {
+    margin-top: 30px;
+    margin-left: 0px;
+    text-align: center;
+}
+.attribution {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
