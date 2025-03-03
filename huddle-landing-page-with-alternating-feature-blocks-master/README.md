@@ -10,7 +10,7 @@ The challenge is to build out an Huddle landing page with alternating feature bl
 
 ### Links
 
-- Solution URL: [The Solution]()
+- Solution URL: [The Solution](https://github.com/Ahmed-Mohey-Eldeen/Frontend-Mentor/tree/main/huddle-landing-page-with-alternating-feature-blocks-master)
 
 ### Built with
 
